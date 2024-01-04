@@ -11,9 +11,11 @@ GameObject:
   - component: {fileID: 297308265303857762}
   - component: {fileID: 297308265303857761}
   - component: {fileID: 297308265303857760}
+  - component: {fileID: 8257983616762987693}
+  - component: {fileID: 3562532198146445316}
   m_Layer: 0
   m_Name: EmemyTruck
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -63,6 +65,31 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.6042573, y: 2.6007838, z: 6.1445284}
   m_Center: {x: -0.0849219, y: -0.23944807, z: -0.040228844}
+--- !u!114 &8257983616762987693
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 297308265303857775}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87d6dae78cbfba749982af384158745d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &3562532198146445316
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 297308265303857775}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb9b0f5656d6c6244af8393cda43ae89, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
 --- !u!1001 &297308265192680221
 PrefabInstance:
   m_ObjectHideFlags: 0

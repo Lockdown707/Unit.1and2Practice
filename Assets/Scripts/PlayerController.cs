@@ -28,4 +28,13 @@ public class PlayerController : MonoBehaviour
         transform.Rotate(Vector3.up, turnSpeed * horizontalInput * Time.deltaTime);
         
     }
+    public void OnCollisionEnter(Collision other)
+    {
+        if (other.gameObject.CompareTag("Enemy"))
+        {
+            Destroy(gameObject);
+            Destroy(other.gameObject);
+            Debug.Log("GameOver!");
+        }
+    }
 }
