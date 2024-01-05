@@ -15,7 +15,8 @@ GameObject:
   - component: {fileID: 4357519763050622196}
   - component: {fileID: 3924063419766850899}
   - component: {fileID: -6846517234490069947}
-  m_Layer: 0
+  - component: {fileID: -2169003403061179361}
+  m_Layer: 3
   m_Name: Rocket
   m_TagString: Missle
   m_Icon: {fileID: 0}
@@ -203,7 +204,7 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 5
+      scalar: 13.753497
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -257,7 +258,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 1, g: 1, b: 1, a: 1}
+      maxColor: {r: 1, g: 0, b: 0.068398, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -319,7 +320,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 1
+      scalar: 3
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -696,13 +697,13 @@ ParticleSystem:
     serializedVersion: 6
     enabled: 1
     type: 4
-    angle: 25
+    angle: 11.861725
     length: 5
     boxThickness: {x: 0, y: 0, z: 0}
     radiusThickness: 1
     donutRadius: 0.2
-    m_Position: {x: 0, y: 0, z: 0}
-    m_Rotation: {x: 0, y: 0, z: 0}
+    m_Position: {x: 0.000056281613, y: -0.086445116, z: -6.255394}
+    m_Rotation: {x: 0.7917345, y: 180, z: 180}
     m_Scale: {x: 1, y: 1, z: 1}
     placementMode: 0
     m_MeshMaterialIndex: 0
@@ -901,7 +902,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 10
+      scalar: 50
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -4795,7 +4796,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 0}
+  - {fileID: 10301, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4859,6 +4860,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 40
+  trailParticle: {fileID: 4357519763050622197}
 --- !u!114 &-6846517234490069947
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4869,6 +4871,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f43c579d2b5d9ec4db4d24eda5fae316, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &-2169003403061179361
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4357519763050622199}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70cdbf0b77c4b924db2e6907d22e8a3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &4357519762463728700
@@ -4922,9 +4936,29 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7029948723529949830, guid: be6b620bb3716684682d8508af17356c, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: -5568371526223589888, guid: be6b620bb3716684682d8508af17356c, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: be6b620bb3716684682d8508af17356c, type: 3}
       propertyPath: m_Name
       value: Rocket
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: be6b620bb3716684682d8508af17356c, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5148817236446094103, guid: be6b620bb3716684682d8508af17356c, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 9013638940889411661, guid: be6b620bb3716684682d8508af17356c, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: be6b620bb3716684682d8508af17356c, type: 3}

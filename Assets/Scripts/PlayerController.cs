@@ -8,6 +8,7 @@ public class PlayerController : MonoBehaviour
     public float turnSpeed = 10f;
     public float horizontalInput;
     public float forwardInput;
+    public ParticleSystem explosionParticle;
     
     
     // Start is called before the first frame update
@@ -32,6 +33,7 @@ public class PlayerController : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Enemy"))
         {
+            explosionParticle.Play();
             Destroy(gameObject);
             Destroy(other.gameObject);
             Debug.Log("GameOver!");

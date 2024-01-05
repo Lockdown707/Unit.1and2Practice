@@ -2,11 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Projectile : MonoBehaviour
+public class WhatAmITouching : MonoBehaviour
 {
-    public float speed = 40.0f;
-    public ParticleSystem trailParticle;
-
     // Start is called before the first frame update
     void Start()
     {
@@ -16,7 +13,11 @@ public class Projectile : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(Vector3.forward * Time.deltaTime * speed);
-        //trailParticle.Play();
+        
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        Debug.Log(collision.gameObject.name);
     }
 }
