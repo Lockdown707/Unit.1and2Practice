@@ -11,6 +11,7 @@ public class PlayerController : MonoBehaviour
     public ParticleSystem explosionParticle;
     
     
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -33,7 +34,6 @@ public class PlayerController : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Enemy"))
         {
-            explosionParticle.Play();
             Destroy(gameObject);
             Destroy(other.gameObject);
             Debug.Log("GameOver!");
